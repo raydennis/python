@@ -15,6 +15,3 @@ except TypeError:
     print("I can't add these two together!")
 
 print("this code executes!")
-
-
-

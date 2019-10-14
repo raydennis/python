@@ -31,5 +31,6 @@ class TestMakeDirectory(unittest.TestCase):
         self.assertTrue(Path(directory).exists())
         os.rmdir(directory)
 
+
 if __name__ == "__main__":
     unittest.main()

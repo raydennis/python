@@ -14,15 +14,16 @@ while guesses_made < 6:
     guesses_made += 1
 
     if guess < number:
-        print ('Your guess is too low.')
+        print('Your guess is too low.')
 
     if guess > number:
-        print ('Your guess is too high.')
+        print('Your guess is too high.')
 
     if guess == number:
         break
 
 if guess == number:
-    print ('Good job, {0}! You guessed my number in {1} guesses!'.format(name, guesses_made))
+    print('Good job, {0}! You guessed my number in {1} guesses!'.format(
+        name, guesses_made))
 else:
-    print ('Nope. The number I was thinking of was {0}'.format(number))
+    print('Nope. The number I was thinking of was {0}'.format(number))
