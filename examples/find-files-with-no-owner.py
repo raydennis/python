@@ -10,9 +10,11 @@ for folder, dirs, files in os.walk(testdir):
     for file in files:
         path = folder + "/" + file
 
-        attributes = os.stat(path)
-        print(path + " no found")
-        continue
+        try:
+            attributes = os.stat(path)
+        except FileNotFoundError:
+            print(path + " no found")
+            continue
 
         if attributes.st_uid not in uidset:
             print(path + " has no owner")
