@@ -1,17 +1,13 @@
-student = {
-    "name": "Mark",
-    "student_id": 15163,
-    "feedback": None
-}
+import pdb
 
-student["last_name"] = "Dennis"
 
-try:
-    last_name = student["last_name"]
-    numbered_last_name = 3 + last_name
-except KeyError:
-    print("Error finding last_name")
-except TypeError:
-    print("I can't add these two together!")
+def main():
+    list = [1, 2, 3]
+    pdb.set_trace()
+    list = [2, 3, 4]
+    pdb.set_trace()
+    print(list)
 
-print("this code executes!")
+
+if __name__ == '__main__':
+    main()
