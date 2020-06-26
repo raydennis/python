@@ -42,6 +42,7 @@ class TestTwoSum(unittest.TestCase):
 
     def testTwoSum3(self):
         self.failUnlessEqual(twoSum([1, 2, 3, 4, 5, 6], 11), (4, 5))
+
     # def testTwoSum4(self):
         # need to use another indice placeholder without the indice
         # being searched if you want this to work.
