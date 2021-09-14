@@ -7,10 +7,9 @@
 
 # updated way
 from pathlib import Path
-from posix import listdir
 
 # create the file
 Path('file.txt').touch()
 
 # call list directory
-# exec(open("listdir.py").read())
+exec(open("listdir.py").read())
